@@ -22,7 +22,7 @@ const HomeMade: React.FC = () => {
           <div className={styles.home__made_info}>
             <h1 className={styles.home__info_title}>
               <span className={styles.home__title_small}>
-                hello
+                htohsidjgoh
                 {t("home.homeMain.homeMainTitlePiece1")}
               </span>{" "}
               <br />
