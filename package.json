@@ -50,7 +50,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "git-commands": "git add . && git commit -m 'commit' && git push -u origin main",
+    "prod": "npm run build && npm run git-commands"
   },
   "eslintConfig": {
     "extends": [
@@ -72,6 +74,8 @@
   },
   "devDependencies": {
     "@types/css-modules": "^1.0.5",
-    "gh-pages": "^6.1.1"
+    "concurrently": "^8.2.2",
+    "gh-pages": "^6.1.1",
+    "npm-run-all": "^4.1.5"
   }
 }
