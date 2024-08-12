@@ -33,10 +33,12 @@ import AdminIndividualInsolesUpdate from "./pages/admin/components/admin-individ
 import AdminIndividualInsolesVariationUpdate from "./pages/admin/components/admin-individual-insoles/components/admin-individual-insoles-update/components/admin-individual-insoles-update-variations/components/admin-individual-insoles-variation-update/AdminIndividualInsolesVariationUpdate";
 import AdminCertificateUpdate from "./pages/admin/components/admin-certificate/components/admin-certificate-update/AdminCertificateUpdate";
 import AdminFopUpdate from "./pages/admin/components/admin-fop/components/admin-fop-update/AdminFopUpdate";
+import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
 
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="*" element={<HomePage />} />
         <Route path="/" element={<HomePage />}></Route>

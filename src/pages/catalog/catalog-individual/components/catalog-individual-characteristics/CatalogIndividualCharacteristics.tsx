@@ -175,8 +175,26 @@ const CatalogIndividualCharacteristics: React.FC<Props> = ({
       <div className={styles.catalog__characteristics_table}>
         <table className={styles.catalog__table_item}>
           <tbody>
-            {activeCoverage
-              ? Object.entries(activeCoverage.characteristics_ua).map(
+            {activeLanguage === "ua"
+              ? activeCoverage
+                ? Object.entries(activeCoverage.characteristics_ua).map(
+                    ([key, value]: any) => (
+                      <tr className={styles.catalog__item_line} key={key}>
+                        <th className={styles.catalog__line_key}>{key}</th>
+                        <td className={styles.catalog__line_value}>{value}</td>
+                      </tr>
+                    )
+                  )
+                : Object.entries(individualInsoles[0].characteristics_ua).map(
+                    ([key, value]: any) => (
+                      <tr className={styles.catalog__item_line} key={key}>
+                        <th className={styles.catalog__line_key}>{key}</th>
+                        <td className={styles.catalog__line_value}>{value}</td>
+                      </tr>
+                    )
+                  )
+              : activeCoverage
+              ? Object.entries(activeCoverage.characteristics_en).map(
                   ([key, value]: any) => (
                     <tr className={styles.catalog__item_line} key={key}>
                       <th className={styles.catalog__line_key}>{key}</th>
@@ -184,7 +202,7 @@ const CatalogIndividualCharacteristics: React.FC<Props> = ({
                     </tr>
                   )
                 )
-              : Object.entries(individualInsoles[0].characteristics_ua).map(
+              : Object.entries(individualInsoles[0].characteristics_en).map(
                   ([key, value]: any) => (
                     <tr className={styles.catalog__item_line} key={key}>
                       <th className={styles.catalog__line_key}>{key}</th>
