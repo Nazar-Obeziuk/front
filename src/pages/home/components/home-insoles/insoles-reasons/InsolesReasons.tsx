@@ -128,9 +128,8 @@ const InsolesReasons: React.FC = () => {
             : t("details.detailsOpen")}
         </p>
         <svg
-          className={`${styles.home__details_icon} ${
-            isOpenDetailsBlock ? `${styles.active}` : ""
-          }`}
+          className={`${styles.home__details_icon} ${isOpenDetailsBlock ? `${styles.active}` : ""
+            }`}
           width="6"
           height="9"
           viewBox="0 0 6 9"
@@ -177,6 +176,9 @@ const InsolesReasons: React.FC = () => {
             </h3>
             <p className={styles.home__more_text}>
               {t("home.homeWhenNeedsInsoles.homeWhenNeedsInsolesDesc4Text")}
+            </p>
+            <p className={styles.home__more_text}>
+              {t("home.homeWhenNeedsInsoles.homeWhenNeedsInsolesDesc4Text2")}
             </p>
           </div>
           <div className={styles.home__more_block}>

@@ -75,6 +75,14 @@ const HomeMade: React.FC = () => {
                 }
                 type="video/webm"
               />
+              <source
+                src={
+                  activeLanguage === "ua"
+                    ? "../../images/home-animation.mp4"
+                    : "../../images/home-animation-en.mp4"
+                }
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </div>
