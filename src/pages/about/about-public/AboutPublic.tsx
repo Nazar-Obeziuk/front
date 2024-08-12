@@ -402,7 +402,7 @@ const AboutPublic: React.FC = () => {
                   {t("public.publicBlock7Text4")}
                 </p>
                 <p className={styles.about__list_numeric}>
-                  <span className={styles.about__list_count}>7.4.</span>У разі
+                  <span className={styles.about__list_count}>7.4.</span>
                   {t("public.publicBlock7Text5")}
                 </p>
                 <p className={styles.about__list_numeric}>
@@ -418,11 +418,11 @@ const AboutPublic: React.FC = () => {
                   {t("public.publicBlock7Text8")}
                 </p>
                 <p className={styles.about__list_numeric}>
-                  <span className={styles.about__list_count}>7.8.</span>У разі
+                  <span className={styles.about__list_count}>7.8.</span>
                   {t("public.publicBlock7Text9")}
                 </p>
                 <p className={styles.about__list_numeric}>
-                  <span className={styles.about__list_count}>7.9.</span>З більш
+                  <span className={styles.about__list_count}>7.9.</span>
                   {t("public.publicBlock7Text10")}
                 </p>
               </div>
