@@ -15,6 +15,8 @@ const HomeMade: React.FC = () => {
     }
   }, [i18n.language]);
 
+
+
   return (
     <section className={styles.home__made_section}>
       <div className={styles.home__made_container}>
