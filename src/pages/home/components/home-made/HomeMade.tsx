@@ -25,7 +25,7 @@ const HomeMade: React.FC = () => {
             <h1 className={styles.home__info_title}>
               <span className={styles.home__title_small}>
                 {t("home.homeMain.homeMainTitlePiece1")}
-              </span>{" "}
+              </span>
               <br />
               {t("home.homeMain.homeMainTitlePiece2")} <br />{" "}
               {t("home.homeMain.homeMainTitlePiece3")} <br />
@@ -60,7 +60,7 @@ const HomeMade: React.FC = () => {
             </NavLink>
           </div>
           <div className={styles.home__made_insoles}>
-            <video
+            {/* <video
               key={activeLanguage}
               autoPlay
               muted
@@ -86,7 +86,17 @@ const HomeMade: React.FC = () => {
                 type="video/mp4"
               />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <img
+              key={activeLanguage}
+              src={
+                activeLanguage === "ua"
+                  ? "../../images/ani-ua.gif"
+                  : "../../images/ani-en.gif"
+              }
+              alt="Home Animation"
+              className={styles.home__insoles_banner}
+            />
           </div>
           <NavLink
             to={"/home/catalog/individual-orthopedic-insoles"}
