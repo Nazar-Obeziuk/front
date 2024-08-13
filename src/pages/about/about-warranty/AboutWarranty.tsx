@@ -119,9 +119,6 @@ const AboutWarranty: React.FC = () => {
                   <li className={styles.about__list_item}>
                     {t("warranty.warrantyList1Text6")}
                   </li>
-                  <li className={styles.about__list_item}>
-                    {t("warranty.warrantyList1Tex7")}
-                  </li>
                 </ul>
               </div>
             </div>

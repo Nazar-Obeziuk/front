@@ -15,6 +15,8 @@ const HomeMade: React.FC = () => {
     }
   }, [i18n.language]);
 
+
+
   return (
     <section className={styles.home__made_section}>
       <div className={styles.home__made_container}>
@@ -74,6 +76,14 @@ const HomeMade: React.FC = () => {
                     : "../../images/home-animation-en.webm"
                 }
                 type="video/webm"
+              />
+              <source
+                src={
+                  activeLanguage === "ua"
+                    ? "../../images/home-animation.mp4"
+                    : "../../images/home-animation-en.mp4"
+                }
+                type="video/mp4"
               />
               Your browser does not support the video tag.
             </video> */}

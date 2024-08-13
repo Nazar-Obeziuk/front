@@ -98,7 +98,7 @@ const AdminFopTable: React.FC<Props> = ({
                     Видалити
                   </button>
                   <button
-                    onClick={() => handleEditFop(adminFops)}
+                    onClick={() => handleEditFop(adminFop)}
                     className={styles.admin__td_action}
                     type="button"
                   >

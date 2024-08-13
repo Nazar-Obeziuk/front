@@ -12,7 +12,7 @@ export const getAllFops = async (lang: string) => {
 
 export const getFopById = async (id: string) => {
   try {
-    const { data } = await axios.get(`/fop-data/${id}`);
+    const { data } = await axios.get(`/fop-data/one/${id}`);
     return data;
   } catch (error) {
     console.log(error);

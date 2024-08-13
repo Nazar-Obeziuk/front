@@ -10,21 +10,25 @@
   background-size: cover;
   padding: 100px 0 160px 0;
 }
+
 .home__made_container {
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .home__made_wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .home__made_info {
   display: flex;
   flex-direction: column;
   gap: 34px;
 }
+
 .home__info_title {
   font-family: "Osnova-Pro";
   font-weight: 700;
@@ -32,17 +36,20 @@
   line-height: 50px;
   color: var(--primary);
 }
+
 .home__title_small {
   font-family: "Osnova-Pro";
   font-weight: 700;
   font-size: 34px;
   color: var(--white);
 }
+
 .home__info_free {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .home__free_title {
   font-family: "Fixel-Display";
   font-weight: 600;
@@ -50,11 +57,13 @@
   color: var(--white);
   text-transform: uppercase;
 }
+
 .home__free_block {
   display: flex;
   align-items: center;
   gap: 14px;
 }
+
 .home__free_item {
   padding: 8px;
   border: 1px solid var(--primary);
@@ -64,6 +73,7 @@
   font-size: 18px;
   color: var(--white);
 }
+
 .home__free_delivery {
   padding: 8px;
   letter-spacing: 0.8px;
@@ -74,6 +84,7 @@
   font-size: 18px;
   color: var(--white);
 }
+
 .home__info_button {
   box-shadow: 0 24px 46px rgba(240, 173, 0, 0.19);
   background: var(--primary);
@@ -92,11 +103,13 @@
   color: var(--black);
   transition: 0.4s;
 }
+
 .home__info_button:hover {
   background: transparent;
   border-color: var(--primary);
   color: var(--primary);
 }
+
 .home__mobile_button {
   display: none;
   box-shadow: 0 24px 46px rgba(240, 173, 0, 0.19);
@@ -113,16 +126,20 @@
   color: var(--black);
   transition: 0.4s;
 }
+
 .home__mobile_button:hover {
   background: transparent;
   border-color: var(--primary);
   color: var(--primary);
 }
+
 .home__insoles_banner {
   height: 460px;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-overflow-scrolling: touch;
+  background: none;
+  display: block;
 }
 
 @media (max-width: 1280px) {
@@ -136,6 +153,7 @@
     font-size: 38px;
     line-height: 44px;
   }
+
   .home__title_small {
     line-height: 36px;
     font-size: 30px;
