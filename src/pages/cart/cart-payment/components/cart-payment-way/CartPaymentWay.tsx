@@ -55,6 +55,8 @@ const CartPaymentWay: React.FC = () => {
         const response = await getPaymentLinkPrivat(formData);
 
         window.open(response.link);
+        localStorage.removeItem("cart");
+        localStorage.removeItem("checkoutAmount");
       } catch (error) {
         console.log(error);
       }
@@ -82,6 +84,8 @@ const CartPaymentWay: React.FC = () => {
         const response = await getPaymentLinkMono(formData);
 
         window.open(response.payment.pageUrl);
+        localStorage.removeItem("cart");
+        localStorage.removeItem("checkoutAmount");
       } catch (error) {
         console.log(error);
       }

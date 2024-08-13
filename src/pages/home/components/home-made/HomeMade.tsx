@@ -15,8 +15,6 @@ const HomeMade: React.FC = () => {
     }
   }, [i18n.language]);
 
-
-
   return (
     <section className={styles.home__made_section}>
       <div className={styles.home__made_container}>
@@ -60,7 +58,7 @@ const HomeMade: React.FC = () => {
             </NavLink>
           </div>
           <div className={styles.home__made_insoles}>
-            {/* <video
+            <video
               key={activeLanguage}
               autoPlay
               muted
@@ -77,26 +75,8 @@ const HomeMade: React.FC = () => {
                 }
                 type="video/webm"
               />
-              <source
-                src={
-                  activeLanguage === "ua"
-                    ? "../../images/home-animation.mp4"
-                    : "../../images/home-animation-en.mp4"
-                }
-                type="video/mp4"
-              />
               Your browser does not support the video tag.
-            </video> */}
-            <img
-              key={activeLanguage}
-              src={
-                activeLanguage === "ua"
-                  ? "../../images/ani-ua.gif"
-                  : "../../images/ani-en.gif"
-              }
-              alt="Home Animation"
-              className={styles.home__insoles_banner}
-            />
+            </video>
           </div>
           <NavLink
             to={"/home/catalog/individual-orthopedic-insoles"}
