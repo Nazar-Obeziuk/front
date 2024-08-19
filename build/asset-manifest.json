@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.973af20c.css",
-    "main.js": "/static/js/main.7333ac89.js",
+    "main.js": "/static/js/main.39fd5d54.js",
     "static/media/home-worker-mobile-bg.png": "/static/media/home-worker-mobile-bg.81335450039f13bc2151.png",
     "static/media/mask.png": "/static/media/mask.e4b4bcd680f1f94d926b.png",
     "static/media/catalog-orthopedic-bg.png": "/static/media/catalog-orthopedic-bg.4d324c9680165f04724d.png",
@@ -27,10 +27,10 @@
     "static/media/order-video-preview.webp": "/static/media/order-video-preview.b4b1444e5b994232d2b3.webp",
     "index.html": "/index.html",
     "main.973af20c.css.map": "/static/css/main.973af20c.css.map",
-    "main.7333ac89.js.map": "/static/js/main.7333ac89.js.map"
+    "main.39fd5d54.js.map": "/static/js/main.39fd5d54.js.map"
   },
   "entrypoints": [
     "static/css/main.973af20c.css",
-    "static/js/main.7333ac89.js"
+    "static/js/main.39fd5d54.js"
   ]
 }
