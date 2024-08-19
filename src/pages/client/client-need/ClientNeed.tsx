@@ -203,7 +203,7 @@ const ClientNeed: React.FC = () => {
         <div className={styles.container}>
           <div className={styles.client__orthopedic_wrapper}>
             <h2 className={styles.client__main_title}>
-              {t("clientWhoNeeds.clientWhoNeedsTitle1")}
+              {t("clientWhoNeeds.clientWhoNeedsTitle2")}
             </h2>
             <div className={styles.client__main_insoles}>
               <div className={styles.home__insole_item}>

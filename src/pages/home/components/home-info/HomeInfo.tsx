@@ -4,7 +4,7 @@ import { Trans, useTranslation } from "react-i18next";
 
 const HomeInfo: React.FC = () => {
   const [isOpenMobileInfoBlock, setIsOpenMobileInfoBlock] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleInfoBlock = () => {
     setIsOpenMobileInfoBlock((prevState) => !prevState);
@@ -35,9 +35,11 @@ const HomeInfo: React.FC = () => {
             <p className={styles.home__info_text}>
               {t("home.homeInfo.homeInfoText3")}
             </p>
-            <p className={styles.home__info_text}>
-              {t("home.homeInfo.homeInfoText3.2")}
-            </p>
+            {i18n.language === "en" && (
+              <p className={styles.home__info_text}>
+                {t("home.homeInfo.homeInfoText3.2")}
+              </p>
+            )}
             <p className={styles.home__info_university}>
               <span className={styles.home__info_primary}>
                 {t("home.homeInfo.homeInfoText4Child1")}
@@ -52,8 +54,9 @@ const HomeInfo: React.FC = () => {
                 : t("details.detailsOpen")}
             </p>
             <svg
-              className={`${styles.home__details_icon} ${isOpenMobileInfoBlock ? `${styles.active}` : ""
-                }`}
+              className={`${styles.home__details_icon} ${
+                isOpenMobileInfoBlock ? `${styles.active}` : ""
+              }`}
               width="6"
               height="9"
               viewBox="0 0 6 9"

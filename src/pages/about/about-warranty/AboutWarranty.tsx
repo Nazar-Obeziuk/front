@@ -61,10 +61,10 @@ const AboutWarranty: React.FC = () => {
                 {t("warranty.warrantyBlock1Title")}
               </h2>
               <p className={styles.about__warranty_text}>
-                {t("warranty.warrantyText1Child1")}
                 <span className={styles.about__text_bold}>
-                  {t("warranty.warrantyText1Child2")}
+                  {t("warranty.warrantyText1Child1")}
                 </span>
+                {t("warranty.warrantyText1Child2")}
                 <a
                   href="../../images/declaration-1.pdf"
                   target="_blank"
@@ -261,10 +261,6 @@ const AboutWarranty: React.FC = () => {
                   <li className={styles.about__item_sublist}>
                     <span className={styles.about__warranty_text}>1)</span>
                     {t("warranty.warrantyTextChart2Text4")}
-                  </li>
-                  <li className={styles.about__item_sublist}>
-                    <span className={styles.about__warranty_text}>2)</span>
-                    {t("warranty.warrantyTextChart2Text5")}
                   </li>
                   <li className={styles.about__item_sublist}>
                     <span className={styles.about__warranty_text}>3)</span>

@@ -80,24 +80,27 @@ const AboutTechnologies: React.FC = () => {
                 {isOpenDetailsBlock && (
                   <ul className={styles.about__main_list}>
                     <li className={styles.about__list_item}>
+                      {t(
+                        "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText4Child1"
+                      )}
                       <span className={styles.about__item_bold}>
                         {t(
-                          "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText4Child1"
+                          "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText4Child2"
                         )}
                       </span>
                       {t(
-                        "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText4Child2"
+                        "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText4Child3"
                       )}
                     </li>
                     <li className={styles.about__list_item}>
+                      {t(
+                        "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText5Child1"
+                      )}
                       <span className={styles.about__item_bold}>
                         {t(
-                          "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText5Child1"
+                          "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText5Child2"
                         )}
                       </span>
-                      {t(
-                        "aboutUs.aboutUsTechnologies.aboutUsTechnologiesText5Child2"
-                      )}
                     </li>
                     <li className={styles.about__list_item}>
                       <span className={styles.about__item_bold}>

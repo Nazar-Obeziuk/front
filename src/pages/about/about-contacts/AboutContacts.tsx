@@ -122,7 +122,11 @@ const AboutContacts: React.FC = () => {
               </span>
               <p className={styles.about__info_text}>
                 {t("contacts.contactsDetailsText1")}{" "}
-                {contactsFops[0]?.first_fop_text} <br />
+                {i18n.language === "ua" && (
+                  <>
+                    {contactsFops[0]?.first_fop_text} <br />
+                  </>
+                )}
                 {t("contacts.contactsDetailsText2")} <br />
                 {t("contacts.contactsDetailsText3")} <br />
                 {t("contacts.contactsDetailsText4")} <br />
