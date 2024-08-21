@@ -41,7 +41,10 @@ const ClientNeed: React.FC = () => {
             </div>
             <div className={styles.client__individual_main}>
               <h2 className={styles.client__main_title}>
-                {t("clientWhoNeeds.clientWhoNeedsTitle1")}
+                <span className={styles.client__title_primary}>
+                  {t("clientWhoNeeds.clientWhoNeedsTitle1Child1")}
+                </span>
+                {t("clientWhoNeeds.clientWhoNeedsTitle1Child2")}
               </h2>
               <div className={styles.client__main_insoles}>
                 <div className={styles.home__insole_item}>
@@ -203,7 +206,10 @@ const ClientNeed: React.FC = () => {
         <div className={styles.container}>
           <div className={styles.client__orthopedic_wrapper}>
             <h2 className={styles.client__main_title}>
-              {t("clientWhoNeeds.clientWhoNeedsTitle2")}
+              {t("clientWhoNeeds.clientWhoNeedsTitle2Child1")}
+              <span className={styles.client__title_primary}>
+                {t("clientWhoNeeds.clientWhoNeedsTitle2Child2")}
+              </span>
             </h2>
             <div className={styles.client__main_insoles}>
               <div className={styles.home__insole_item}>

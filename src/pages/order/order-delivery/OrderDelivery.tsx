@@ -88,13 +88,13 @@ const OrderDelivery: React.FC = () => {
               </h2>
               <p className={styles.order__main_text}>
                 {t("delivery.deliveryBlock2Text1Child1")}
-                <a
-                  href="../../images/delivery-global.pdf"
+                <NavLink
+                  to="https://novaposhtaglobal.ua/en/for-you/tariffs/"
                   target="_blank"
                   className={styles.order__text_link}
                 >
                   {t("delivery.deliveryBlock2Text1Child2")}
-                </a>
+                </NavLink>
               </p>
             </div>
           </div>

@@ -206,13 +206,16 @@ const AboutWarranty: React.FC = () => {
                 </p>
                 <div className={styles.about__position_list}>
                   <p className={styles.about__warranty_text}>
-                    a) {t("warranty.warrantyTextArticle1Text3")}
+                    {t("warranty.warrantyTextArticle1Text3Marker")}){" "}
+                    {t("warranty.warrantyTextArticle1Text3")}
                   </p>
                   <p className={styles.about__warranty_text}>
-                    б) {t("warranty.warrantyTextArticle1Text4")}
+                    {t("warranty.warrantyTextArticle1Text4Marker")}){" "}
+                    {t("warranty.warrantyTextArticle1Text4")}
                   </p>
                   <p className={styles.about__warranty_text}>
-                    в) {t("warranty.warrantyTextArticle1Text5")}
+                    {t("warranty.warrantyTextArticle1Text5Marker")}){" "}
+                    {t("warranty.warrantyTextArticle1Text5")}
                   </p>
                 </div>
                 <p className={styles.about__list_numeric}>
@@ -263,23 +266,23 @@ const AboutWarranty: React.FC = () => {
                     {t("warranty.warrantyTextChart2Text4")}
                   </li>
                   <li className={styles.about__item_sublist}>
-                    <span className={styles.about__warranty_text}>3)</span>
+                    <span className={styles.about__warranty_text}>2)</span>
                     {t("warranty.warrantyTextChart2Text6")}
                   </li>
                   <li className={styles.about__item_sublist}>
-                    <span className={styles.about__warranty_text}>4)</span>
+                    <span className={styles.about__warranty_text}>3)</span>
                     {t("warranty.warrantyTextChart2Text7")}
                   </li>
                   <li className={styles.about__item_sublist}>
-                    <span className={styles.about__warranty_text}>5)</span>
+                    <span className={styles.about__warranty_text}>4)</span>
                     {t("warranty.warrantyTextChart2Text8")}
                   </li>
                   <li className={styles.about__item_sublist}>
-                    <span className={styles.about__warranty_text}>6)</span>
+                    <span className={styles.about__warranty_text}>5)</span>
                     {t("warranty.warrantyTextChart2Text9")}
                   </li>
                   <li className={styles.about__item_sublist}>
-                    <span className={styles.about__warranty_text}>7)</span>
+                    <span className={styles.about__warranty_text}>6)</span>
                     {t("warranty.warrantyTextChart2Text10")}
                   </li>
                 </ul>

@@ -1,35 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./AboutContacts.module.css";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { getAllFops } from "../../../services/fop/fop";
-import { IFop } from "../../../services/fop/fop.interface";
-import Loader from "../../../components/loader/Loader";
 
 const AboutContacts: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const [contactsFops, setContactsFops] = useState<IFop[]>([]);
-
-  const getFops = async () => {
-    try {
-      const response = await getAllFops(i18n.language);
-      if (Array.isArray(response)) {
-        setContactsFops(response);
-      } else {
-        console.error("Unexpected response format:", response);
-      }
-    } catch (error) {
-      console.error("Error fetching FOPs data:", error);
-    }
-  };
-
-  useEffect(() => {
-    getFops();
-  }, [i18n.language]);
-
-  if (!contactsFops) {
-    return <Loader />;
-  }
+  const { t } = useTranslation();
 
   return (
     <section className={styles.about__contacts_section}>
@@ -116,25 +91,6 @@ const AboutContacts: React.FC = () => {
                 {t("contacts.contactsCallsChild3")}
               </span>
             </p>
-            <div className={styles.about__main_payment}>
-              <span className={styles.about__text_primary}>
-                {t("contacts.contactsDetailsTitle")}
-              </span>
-              <p className={styles.about__info_text}>
-                {t("contacts.contactsDetailsText1")}{" "}
-                {i18n.language === "ua" && (
-                  <>
-                    {contactsFops[0]?.first_fop_text} <br />
-                  </>
-                )}
-                {t("contacts.contactsDetailsText2")} <br />
-                {t("contacts.contactsDetailsText3")} <br />
-                {t("contacts.contactsDetailsText4")} <br />
-                {t("contacts.contactsDetailsText5")} <br />
-                {t("contacts.contactsDetailsText6")} <br />
-                {t("contacts.contactsDetailsText7")}
-              </p>
-            </div>
           </div>
         </div>
       </div>

@@ -99,9 +99,9 @@ const OrderPayment: React.FC = () => {
                     className={styles.order__payments_icon}
                   />
                 </div>
-                <p className={styles.order__main_text}>
+                {/* <p className={styles.order__main_text}>
                   {t("payment.paymentBlock1Text2")}
-                </p>
+                </p> */}
               </div>
             </div>
             <div

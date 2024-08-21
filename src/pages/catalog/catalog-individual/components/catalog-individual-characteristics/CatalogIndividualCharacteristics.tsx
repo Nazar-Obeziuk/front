@@ -163,12 +163,20 @@ const CatalogIndividualCharacteristics: React.FC<Props> = ({
       <div className={styles.catalog__characteristics_info}>
         <p className={styles.catalog__characteristics_title}>
           {activeLanguage === "ua"
-            ? individualInsoles[0].characteristics_subtitle_ua
+            ? activeCoverage
+              ? activeCoverage.characteristics_subtitle_ua
+              : individualInsoles[0].characteristics_subtitle_ua
+            : activeCoverage
+            ? activeCoverage.characteristics_subtitle_en
             : individualInsoles[0].characteristics_subtitle_en}
         </p>
         <p className={styles.catalog__info_text}>
           {activeLanguage === "ua"
-            ? individualInsoles[0].characteristics_description_ua
+            ? activeCoverage
+              ? activeCoverage.characteristics_description_ua
+              : individualInsoles[0].characteristics_description_ua
+            : activeCoverage
+            ? activeCoverage.characteristics_description_en
             : individualInsoles[0].characteristics_description_en}
         </p>
       </div>
